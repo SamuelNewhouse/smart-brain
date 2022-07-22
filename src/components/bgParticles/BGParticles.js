@@ -5,8 +5,6 @@ const particlesInit = async (main) => {
   await loadFull(main);
 };
 
-const particlesLoaded = (container) => {};
-
 const BGParticles = () => {
   return (
     <div style={{ zIndex: -1, position: "fixed" }}>
