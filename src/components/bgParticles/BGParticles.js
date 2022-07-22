@@ -1,5 +1,6 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import "./BGParticles.css";
 
 const particlesInit = async (main) => {
   await loadFull(main);
@@ -7,7 +8,7 @@ const particlesInit = async (main) => {
 
 const BGParticles = () => {
   return (
-    <div style={{ zIndex: -1, position: "fixed" }}>
+    <div className="bgparticles">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -56,7 +57,7 @@ const BGParticles = () => {
                 default: "bounce",
               },
               random: false,
-              speed: 6,
+              speed: 5,
               straight: false,
             },
             number: {
