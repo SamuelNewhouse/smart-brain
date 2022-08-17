@@ -1,8 +1,8 @@
-const Rank = () => {
+const Rank = props => {
   return (
     <div>
-      <div className="white f3">Sam, your current rank is...</div>
-      <div className="white f1">5</div>
+      <div className="white f3">{props.name}, your current entry count is...</div>
+      <div className="white f1">{props.entries}</div>
     </div>
   );
 };
